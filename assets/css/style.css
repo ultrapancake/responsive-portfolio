@@ -238,3 +238,81 @@ h3{
     font-size: 12px;
     color: #ffffff;
 }
+
+/* Media Quaries */
+
+@media screen and (min-width: 500px){
+    #content{
+        width: 490px;
+    }
+    .about_p{
+        width: 450px;
+    }
+    #menu{
+        width: 490px;
+    }
+    input, textarea{
+        width: 480px;
+    }
+}
+@media screen and (min-width: 640px){
+    #content{
+        width: 600px;
+    }
+    .about_p{
+        width: 560px;
+    }
+    #menu{
+        width: 600px;
+        float: none;
+    }
+    input, textarea{
+        width: 590px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #content{
+        width: 640px;
+    }
+    .about_p{
+        width: 620px;
+    }
+    #menu{
+        width: 640px;
+    }
+    input, textarea{
+        width: 630px;
+    }
+}
+
+@media screen and (min-width: 980px){
+    #content{
+        width: 768px;
+    }
+    .about_p{
+        width: 748px;
+    }
+    #menu{
+        width: 768px;
+    }
+    input, textarea{
+        width: 758px;
+    }
+
+}
+
+@media screen and (min-width: 1100px){
+    #content{
+        width: 970px;
+    }
+    .about_p{
+        width: 950px;
+    }
+    #menu{
+        width: 970px;
+    }
+    input, textarea{
+        width: 960px;
+    }
+}
