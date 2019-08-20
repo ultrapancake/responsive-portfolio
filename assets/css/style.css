@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Main body CSS */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    background-image: url("../images/gravel.png");
+    margin: 0 auto;
+    padding-bottom: 50px;
+    line-height: 150%;
+    font-size: 12px;
+}
+
+h1, h2, h3, h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-size: 24px;
+}
+
+h4{
+    margin: 10px 0px 10px 0px;
+}
+
+#content{
+    width: 970px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 5px 5px 10px 5px;
+    height: 0 auto;
+}
+
+/* Header */
+
+header{
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #777777;
+}
+
+#menu{
+    width: 960px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+h1{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 125px;
+    text-align: center;
+    vertical-align: center;
+    padding: 10px 5px 10px 5px;
+    height: 100%;
+    float: left;
+    margin: 0 auto;
+}
+
+#link_bar{
+    float: right;
+    text-align: right;
+    vertical-align: center;
+    height: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#link_contact, #link_about{
+    margin-right: 2.5px;
+    border-right: 1px solid #777777;
+    padding-right: 7.5px;
+}
+
+header::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#link_contact, #link_about, #link_portfolio{
+    color: #777777;
+    text-decoration: none;
+}
+
+#link_contact:hover, #link_about:hover, #link_portfolio:hover{
+    color: red;
+    text-decoration: none;
+}
+
+/* About Me page */
+
+#profile_picture{
+    width: 200px;
+    height: 200px;
+    margin: 0px 20px 20px 0px;
+}
+
+.about_p{
+    width: 960px;
+    font-size: 14px;
+}
+
+#profile_picture{
+    float: left;
+}
+
+#content::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Contact page */
+
+h4{
+    color: #777777;
+    font-size: 20px;
+}
+
+input, textarea{
+    width: 960px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+#submit{
+    text-decoration: none;
+    border: none;
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+    color: #ffffff;
+    width: 125px;
+}
+
+#submit:hover{
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    cursor: pointer;
+}
+
+/* Portfolio Page */
+
+.a_portfolio{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    margin: 0;
+}
+
+.a_portfolio:hover{
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+}
+
+.img_portfolio{
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+
+.span_portfolio{
+    position: absolute;
+    bottom: 20px;
+    right: center;
+    width: 200px;
+    height: 40px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: center;
+    z-index: 2;
+}
+
+#portfolio_1, #portfolio_2, #portfolio_3, #portfolio_4, #portfolio_5{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+}
+
+#portfolio_1{
+    left: 20px;
+    border-right: 20px;
+}
+
+#portfolio_2{
+    left: 240px;
+    border-right: 20px;
+    bottom: 200px;
+}
+
+#portfolio_3{
+    left: 460px;
+    bottom: 400px;
+}
+
+#portfolio_4{
+    left: 20px;
+    bottom: 380px;
+    border-right: 20px;
+}
+
+#portfolio_5{
+    left: 240px;
+    border-right: 20px;
+    bottom: 580px;
+}
+
+/* Footer */
+
+footer{
+    clear: both;
+    width: 100%;
+    background-color: #777777;
+    border-top: 8px solid #4aaaa5;
+    position: fixed;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    text-align: bottom;
+    height: 50px;
+}
+
+h3{
+    font-size: 12px;
+    color: #ffffff;
+}
