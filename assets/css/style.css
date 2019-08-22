@@ -1,10 +1,10 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 /* Main body CSS */
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
     background-image: url("../images/gravel.png");
@@ -14,17 +14,17 @@ body{
     font-size: 12px;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #4aaaa5;
     font-size: 24px;
 }
 
-h4{
+h4 {
     margin: 10px 0px 10px 0px;
 }
 
-#content{
+#content {
     width: 970px;
     margin: 0 auto;
     background-color: #ffffff;
@@ -37,21 +37,21 @@ h4{
 
 /* Header */
 
-header{
+header {
     background-color: #ffffff;
     width: 100%;
     margin: 0 auto;
     border-bottom: 1px solid #777777;
 }
 
-#menu{
+#menu {
     width: 960px;
     background-color: #ffffff;
     margin: 0 auto;
     padding-top: 20px;
 }
 
-h1{
+h1 {
     background-color: #4aaaa5;
     color: #ffffff;
     width: 125px;
@@ -63,7 +63,7 @@ h1{
     margin: 0 auto;
 }
 
-#link_bar{
+#link_bar {
     float: right;
     text-align: right;
     vertical-align: center;
@@ -72,46 +72,46 @@ h1{
     font-size: 20px;
 }
 
-#link_contact, #link_about{
+#link_contact, #link_about {
     margin-right: 2.5px;
     border-right: 1px solid #777777;
     padding-right: 7.5px;
 }
 
-header::after{
+header::after {
     content: "";
     display: block;
     clear: both;
 }
 
-#link_contact, #link_about, #link_portfolio{
+#link_contact, #link_about, #link_portfolio {
     color: #777777;
     text-decoration: none;
 }
 
-#link_contact:hover, #link_about:hover, #link_portfolio:hover{
+#link_contact:hover, #link_about:hover, #link_portfolio:hover {
     color: red;
     text-decoration: none;
 }
 
 /* About Me page */
 
-#profile_picture{
+#profile_picture {
     width: 200px;
     height: 200px;
     margin: 0px 20px 20px 0px;
 }
 
-.about_p{
+.about_p {
     width: 960px;
     font-size: 14px;
 }
 
-#profile_picture{
+#profile_picture {
     float: left;
 }
 
-#content::after{
+#content::after {
     content: "";
     display: block;
     clear: both;
@@ -119,20 +119,20 @@ header::after{
 
 /* Contact page */
 
-h4{
+h4 {
     color: #777777;
     font-size: 20px;
 }
 
-input, textarea{
+input, textarea {
     width: 960px;
 }
 
-textarea{
+textarea {
     resize: vertical;
 }
 
-#submit{
+#submit {
     text-decoration: none;
     border: none;
     background-color: #4aaaa5;
@@ -142,7 +142,7 @@ textarea{
     width: 125px;
 }
 
-#submit:hover{
+#submit:hover {
     border-top: 1px solid red;
     border-left: 1px solid red;
     cursor: pointer;
@@ -150,7 +150,7 @@ textarea{
 
 /* Portfolio Page */
 
-.a_portfolio{
+.a_portfolio {
     position: relative;
     display: block;
     width: 200px;
@@ -159,18 +159,18 @@ textarea{
     margin: 0;
 }
 
-.a_portfolio:hover{
+.a_portfolio:hover {
     border-top: 2px solid red;
     border-left: 2px solid red;
 }
 
-.img_portfolio{
+.img_portfolio {
     width: 200px;
     height: 200px;
     z-index: 1;
 }
 
-.span_portfolio{
+.span_portfolio {
     position: absolute;
     bottom: 20px;
     right: center;
@@ -184,36 +184,36 @@ textarea{
     z-index: 2;
 }
 
-#portfolio_1, #portfolio_2, #portfolio_3, #portfolio_4, #portfolio_5{
+#portfolio_1, #portfolio_2, #portfolio_3, #portfolio_4, #portfolio_5 {
     position: relative;
     width: 200px;
     height: 200px;
     background: #ffffff;
 }
 
-#portfolio_1{
+#portfolio_1 {
     left: 20px;
     border-right: 20px;
 }
 
-#portfolio_2{
+#portfolio_2 {
     left: 240px;
     border-right: 20px;
     bottom: 200px;
 }
 
-#portfolio_3{
+#portfolio_3 {
     left: 460px;
     bottom: 400px;
 }
 
-#portfolio_4{
+#portfolio_4 {
     left: 20px;
     bottom: 380px;
     border-right: 20px;
 }
 
-#portfolio_5{
+#portfolio_5 {
     left: 240px;
     border-right: 20px;
     bottom: 580px;
@@ -221,7 +221,7 @@ textarea{
 
 /* Footer */
 
-footer{
+footer {
     clear: both;
     width: 100%;
     background-color: #777777;
@@ -235,122 +235,139 @@ footer{
     z-index: 3;
 }
 
-h3{
+h3 {
     font-size: 12px;
     color: #ffffff;
 }
 
 /* Media Quaries */
 
-@media screen and (min-width: 500px){
-    #content{
+@media screen and (min-width: 500px) {
+    #content {
         width: 490px;
     }
-    .about_p{
+    .about_p {
         width: 450px;
     }
-    #menu{
+    #menu {
         width: 490px;
     }
-    input, textarea{
+    input, textarea {
         width: 480px;
     }
-    #portfolio_3{
+    #portfolio_3 {
         left: 20px;
         top: 40px;
     }
-    .con_portfolio{
+    .con_portfolio {
         height: 700px;
     }
+    #link_bar {
+        float: none;
+        padding: 20px 0px;
+        position: relative;
+        right: 120px;
+        top: 10px;
+    }
+    h1 {
+        width: 100%;
+    }
 }
-@media screen and (min-width: 640px){
-    #content{
+
+@media screen and (min-width: 640px) {
+    #content {
         width: 600px;
     }
-    .about_p{
+    .about_p {
         width: 560px;
     }
-    #menu{
+    #menu {
         width: 600px;
         float: none;
     }
-    input, textarea{
+    input, textarea {
         width: 590px;
     }
-    #portfolio_3{
+    #portfolio_3 {
         left: 20px;
         top: 40px;
     }
-    .con_portfolio{
+    .con_portfolio {
         height: 700px;
+    }
+    h1 {
+        width: 125px;
+    }
+    #link_bar {
+        float: right;
+        position: static;
     }
 }
 
-@media screen and (min-width: 768px){
-    #content{
+@media screen and (min-width: 768px) {
+    #content {
         width: 640px;
     }
-    .about_p{
+    .about_p {
         width: 620px;
     }
-    #menu{
+    #menu {
         width: 640px;
     }
-    input, textarea{
+    input, textarea {
         width: 630px;
     }
-    #portfolio_3{
+    #portfolio_3 {
         left: 20px;
         top: 40px;
     }
-    .con_portfolio{
+    .con_portfolio {
         height: 700px;
     }
 }
 
-@media screen and (min-width: 980px){
-    #content{
+@media screen and (min-width: 980px) {
+    #content {
         width: 768px;
     }
-    .about_p{
+    .about_p {
         width: 748px;
     }
-    #menu{
+    #menu {
         width: 768px;
     }
-    input, textarea{
+    input, textarea {
         width: 758px;
     }
-    #portfolio_3{
+    #portfolio_3 {
         left: 460px;
         bottom: 400px;
         top: -400px;
     }
-    .con_portfolio{
+    .con_portfolio {
         height: 480px;
     }
-
 }
 
-@media screen and (min-width: 1100px){
-    #content{
+@media screen and (min-width: 1100px) {
+    #content {
         width: 970px;
     }
-    .about_p{
+    .about_p {
         width: 950px;
     }
-    #menu{
+    #menu {
         width: 970px;
     }
-    input, textarea{
+    input, textarea {
         width: 960px;
     }
-    #portfolio_3{
+    #portfolio_3 {
         left: 460px;
         bottom: 400px;
         top: -400px;
     }
-    .con_portfolio{
+    .con_portfolio {
         height: 480px;
     }
 }
